@@ -1,0 +1,28 @@
+{
+    "name": "haosheng0211/laravel-form-request",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Haosheng\\FormRequest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mr.Jin",
+            "email": "haosheng0211@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/http": "^8.0",
+        "illuminate/validation": "^8.0",
+        "illuminate/auth": "^8.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.7",
+        "phpstan/phpstan": "^1.4"
+    },
+    "scripts": {
+        "lint": "./vendor/bin/php-cs-fixer fix $1",
+        "analyse": "./vendor/bin/phpstan analyse -c phpstan.neon --error-format=table"
+    }
+}
